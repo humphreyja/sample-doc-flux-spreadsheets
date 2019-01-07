@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import { DocFlux, Component } from '@harvest-profit/doc-flux';
 /** @jsx DocFlux.createElement */
 
-export default class SampleTable extends Component {
+// This simply shows that you can pass the raw JSON for pdfmake
+export default class Test extends Component {
   static propTypes = {
     names: PropTypes.arrayOf(PropTypes.string).isRequired,
     ages: PropTypes.arrayOf(PropTypes.number).isRequired,
@@ -10,7 +11,7 @@ export default class SampleTable extends Component {
 
   renderTableRows() {
     return this.props.names.map((name, idx) => (
-      <tr height={100}>
+      <tr>
         <td>{name}</td>
         <td>cool</td>
         <td>{this.props.ages[idx]}</td>
@@ -20,20 +21,21 @@ export default class SampleTable extends Component {
 
   render() {
     return (
-      <div>
-        <h1>cool</h1>
-        <table>
-          <tname>People</tname>
-          <thead height={100}>
-            <th colSpan={2}>Name</th>
-            <th>Age</th>
-          </thead>
-          <tbody>
-            {this.renderTableRows()}
-          </tbody>
-        </table>
-        <h1>cool 2</h1>
-      </div>
+      <raw
+        data={{
+          header: 'test content',
+          stack: [
+            {
+              text: 'page 1',
+              pageBreak: 'after',
+            },
+            {
+              text: 'page 2',
+              pageBreak: 'after',
+            },
+          ],
+        }}
+      />
     );
   }
 }
