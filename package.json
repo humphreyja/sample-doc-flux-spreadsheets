@@ -4,8 +4,8 @@
   "private": false,
   "homepage": "https://humphreyja.github.io/sample-doc-flux-spreadsheets/",
   "dependencies": {
-    "@harvest-profit/doc-flux": "^1.0.0-beta.1",
-    "@harvest-profit/doc-flux-pdfs": "^1.0.1",
+    "@harvest-profit/doc-flux": "^1.1.4",
+    "@harvest-profit/doc-flux-pdfs": "^1.0.8",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
