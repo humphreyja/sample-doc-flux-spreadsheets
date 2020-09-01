@@ -4,18 +4,18 @@ import { Document as PDFDocument } from '@harvest-profit/doc-flux-pdfs';
 import Comp from './components/PDFHeadings';
 // import Comp from './components/SampleTable';
 
-const publicURL = `${window.location.protocol}//${window.location.host}`;
+const publicURL = window.location.href;
 
 const style = {
   fonts: {
     OpenSans: {
-      normal: `${publicURL}/Open_Sans/OpenSans-Regular.ttf`,
-      bold: `${publicURL}/Open_Sans/OpenSans-Bold.ttf`,
-      italics: `${publicURL}/Open_Sans/OpenSans-Italic.ttf`,
-      bolditalics: `${publicURL}/Open_Sans/OpenSans-BoldItalic.ttf`,
+      normal: `${publicURL}Open_Sans/OpenSans-Regular.ttf`,
+      bold: `${publicURL}Open_Sans/OpenSans-Bold.ttf`,
+      italics: `${publicURL}Open_Sans/OpenSans-Italic.ttf`,
+      bolditalics: `${publicURL}Open_Sans/OpenSans-BoldItalic.ttf`,
     },
     Lobster: {
-      normal: `${publicURL}/Lobster/Lobster-Regular.ttf`,
+      normal: `${publicURL}Lobster/Lobster-Regular.ttf`,
     },
   },
   css: {
