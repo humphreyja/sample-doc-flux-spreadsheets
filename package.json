@@ -11,7 +11,7 @@
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.0",
     "save-as": "^0.1.8",
-    "xlsx": "^0.11.18"
+    "xlsx": "^0.17.0"
   },
   "scripts": {
     "start": "react-scripts start",
